@@ -35,7 +35,7 @@
 
 > _Describe at least one contribution by the open source
 community written in the language._
-
+The open source library function for Rust is located on https://crates.io/. For the purpose of this assignmen, I opted to use the 
 # Analysis of the language
 
 > _
