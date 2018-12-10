@@ -24,7 +24,7 @@
 
 ## About the tools
 
-> _Rustup, the installer, comes packaged with Cargo. Similar to Lein, Cargo can automatically create projects and run them from a src folder._.
+> _Rustup, the installer, automatically installs a package manager known as Cargo. Similar to Lein, Cargo can automatically create projects and run them either from a file located in the src folder, or from the directory through the command ```cargo run```. It does require you to have the Visual Basic Studio tools for C installed._.
 
 ## About the standard library
 
@@ -39,14 +39,15 @@ community written in the language._
 # Analysis of the language
 
 > _
+Rust is a language that has some support for functional programming.
+It allows the user to utilize macros for meta programming - writing code that writes more code.
 
-1.	The style of programming supported by the language: functional vs procedural programming	
-2.	The ability to perform meta-programming such as macros
 3.	Symbol resolution and its support for closure
 4.	Scoping rules supported by the language: lexical vs dynamic scoping
 5.	Functional programming constructs either as part of the language or supported by the standard library of the runtime.
 6.	Its type system: static vs dynamic types
 7.	Strengths and weaknesses of the language
+Rust's main focus is on being memory safe - it avoids memory leaks and such.
 _.
 
 
