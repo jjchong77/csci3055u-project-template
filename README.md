@@ -1,7 +1,7 @@
 # _Your project title_
 
-- _your name_
-- _your email (uoit.net)_
+- _Jeremy Chong_
+- _jeremy.chong@uoit.net_
 
 ## About the language
 
@@ -24,7 +24,7 @@
 
 ## About the tools
 
-> _Describe the compiler or interpreter needed_.
+> _Rustup, the installer, comes packaged with Cargo. Similar to Lein, Cargo can automatically create projects and run them from a src folder._.
 
 ## About the standard library
 
