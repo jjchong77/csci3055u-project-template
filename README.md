@@ -186,9 +186,8 @@ The open source library function for Rust is located on https://crates.io/. For 
 > _
 Rust is a language that has some support for functional programming.
 It allows the user to utilize macros for meta programming - writing code that writes more code.
-
-3.	Symbol resolution and its support for closure
-4.	Scoping rules supported by the language: lexical vs dynamic scoping
+Rust resolves symbols by an ownership system. Every value has an "owner", and if that owner drops out of the scope, the values are erased. For instance, if you pass a variable to println, after it's printed out, you will no longer be able to use that variable.
+Rust is a lexical scope language. It knows the types of variables during compilation, and will return errors if actions are taken with incompatible types.
 5.	Functional programming constructs either as part of the language or supported by the standard library of the runtime.
 
 Rust is a statically typed system. That is to say - it must know the types of all variables it uses at the time of compilation. HOWEVER, it also supports type inference. This means that even if you don't declare the type, it will assign a type based off the assigned values.
