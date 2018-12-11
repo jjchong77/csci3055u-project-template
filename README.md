@@ -14,14 +14,45 @@
 
 > _give some code snippet of the language_
 
-*Let form*
+*declaring and shadowing variables*
+```
+let mut num = 0; //make mutable variable
+let num2=0;
+//num2=num2+1; would not work, because num2 is not muteable.
+let num2=num2+1; //called shadowing a variable; allows you to change a normally unmuteable variable. This gives you more control over what can be done.
+```
+*if, else, and if else*
 
-```clojure
-(let [x 10
-      y 20]
-  (+ x y))
+```
+fn main ()
+{
+    if num<0.0
+    {
+        println!("negative");
+    }
+    else if num > 0.0
+    {
+        println!("positive");
+    }
+    else
+    {
+        println!("zero");
+    }
+}
+
 ```
 
+*loops*
+```
+ let mut num=0;
+    loop
+    {
+        num=num+1;
+        println!("Iteration no {}", num);
+        if (num==10)
+        {break;}
+    }
+    ```
 ## About the tools
 
 > _Rustup, the installer, automatically installs a package manager known as Cargo. Similar to Lein, Cargo can automatically create projects and run them either from a file located in the src folder, or from the directory through the command ```cargo run```. It does require you to have the Visual Basic Studio tools for C installed._.
