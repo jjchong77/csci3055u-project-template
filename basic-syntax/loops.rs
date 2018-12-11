@@ -20,4 +20,10 @@ fn main ()
         println!("Iteration no {}", myar[x]); // prints the elements in the array
 
     }
+    let mut index = 0;
+    while index < 5 { //while loop
+       println!("the value is: {}", index);
+
+       index = index + 1;
+   }
 }
