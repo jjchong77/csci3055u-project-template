@@ -45,7 +45,7 @@ It allows the user to utilize macros for meta programming - writing code that wr
 3.	Symbol resolution and its support for closure
 4.	Scoping rules supported by the language: lexical vs dynamic scoping
 5.	Functional programming constructs either as part of the language or supported by the standard library of the runtime.
-6.	Its type system: static vs dynamic types
+Rust has a strongly static type system. (it also supports type inference. This means that even if you don't declare the type, it will assign a type based off how the variable is used.)
 7.	Strengths and weaknesses of the language
 Rust's main focus is on being memory safe - it avoids memory leaks and such.
 _.
