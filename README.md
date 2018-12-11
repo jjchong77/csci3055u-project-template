@@ -8,7 +8,9 @@
 > _Describe the language_
 >
 > - History
-> - Some interesting features
+> - Ownership feature helps manage memory.
+> - comes with cargo, which manages projects and imports.
+> - 
 
 ## About the syntax
 
@@ -151,7 +153,8 @@ It allows the user to utilize macros for meta programming - writing code that wr
 5.	Functional programming constructs either as part of the language or supported by the standard library of the runtime.
 6.    Rust is a statically typed system. That is to say - it must know the types of all variables it uses at the time of compilation. HOWEVER, it also supports type inference. This means that even if you don't declare the type, it will assign a type based off the assigned values.
 7.	Strengths and weaknesses of the language
-Rust's main focus is on being memory safe - it avoids memory leaks and such.
+Rust's main focus is on being memory safe - it avoids memory leaks and such. It has an "ownership" feature which allows it to make memory safe guarantees without needing a garbage collector. 
+
 
 
 
