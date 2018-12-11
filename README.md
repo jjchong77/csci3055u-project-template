@@ -58,7 +58,7 @@ fn main ()
 ```
 
 *loops*
-`fn main ()
+```fn main ()
 {
    let mut num=0;
     loop
@@ -81,8 +81,7 @@ fn main ()
 
     }
 }
-
-  ```
+```
 *defining functions*
 ```
 fn main() {
