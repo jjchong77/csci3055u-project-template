@@ -79,7 +79,20 @@ let mut num=4.0;
 ```
 ## About the tools
 
-> _Rustup, the installer, automatically installs a package manager known as Cargo. Similar to Lein, Cargo can automatically create projects and run them either from a file located in the src folder, or from the directory through the command ```cargo run```. It does require you to have the Visual Basic Studio tools for C installed._.
+> Rustup, the installer, automatically installs a package manager known as Cargo. Similar to Lein, Cargo can automatically create projects and run them either from a file located in the src folder, or from the directory through the command ```cargo run```. It does require you to have the Visual Basic Studio tools for C installed. 
+
+>Projects can be created through Cargo with the command ```cargo new project_name```. It will create several directories and a file that holds information on the project, the ```Cargo.toml``` file. Here is an example.
+
+```[package]
+name = "hello_cargo"
+version = "0.1.0"
+authors = ["Your Name <you@example.com>"]
+edition = "2018"
+
+[dependencies]
+```
+
+>Cargo also has the ```build``` 
 
 ## About the standard library
 
@@ -103,6 +116,6 @@ It allows the user to utilize macros for meta programming - writing code that wr
 6.    Rust is a statically typed system. That is to say - it must know the types of all variables it uses at the time of compilation. HOWEVER, it also supports type inference. This means that even if you don't declare the type, it will assign a type based off the assigned values.
 7.	Strengths and weaknesses of the language
 Rust's main focus is on being memory safe - it avoids memory leaks and such.
-_.
+
 
 
