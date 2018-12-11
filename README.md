@@ -7,7 +7,7 @@
 
 > _Describe the language_
 >
-> - History
+> -Rust is a systems programming language thatt focuses on safety. It is similar to C++, but the designers intended it to provide better memory safety while having good performance. It was designed by Graydon Hoare at Mozilla Research with help from Dave Herman, Brendan Eich, and many others. It won the first place prize for "most loved programming language" in the Stack Overflow Developer Survey in 2016, 2017, and 2018.
 > - Ownership feature helps manage memory.
 > - comes with cargo, which manages projects and imports.
 > - 
