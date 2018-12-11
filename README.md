@@ -133,6 +133,7 @@ edition = "2018"
 
 > _Give some examples of the functions and data structures
 > offered by the standard library_.
+>String, as well as IO are inside the std library.
 
 ## About open source library
 
