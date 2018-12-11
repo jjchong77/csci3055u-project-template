@@ -57,12 +57,15 @@ fn main ()
 ```
 fn main() {
     println!("Main function!");
-    fn2();
+    let num = 32.0;
+    let num2=3.0;
+    fn2(num);
 }
 
-fn fn2() {
-    println!("Second function.");
+fn fn2(x:f32, y:f32) { //takes float variable x and y
+    println!("{} {}", x, y);
 }
+
 ```
 ## About the tools
 
