@@ -53,6 +53,7 @@ fn main ()
         {break;}
     }
     ```
+
 ## About the tools
 
 > _Rustup, the installer, automatically installs a package manager known as Cargo. Similar to Lein, Cargo can automatically create projects and run them either from a file located in the src folder, or from the directory through the command ```cargo run```. It does require you to have the Visual Basic Studio tools for C installed._.
