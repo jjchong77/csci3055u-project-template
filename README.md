@@ -172,9 +172,7 @@ edition = "2018"
 
 ## About the standard library
 
-> _Give some examples of the functions and data structures
-> offered by the standard library_.
->String, as well as IO are inside the std library.
+>String, as well as IO are inside the std library. Another useful thing in the std libarary is Vector, which allows you to have a collection of any type that can easily be added to. 
 
 ## About open source library
 
