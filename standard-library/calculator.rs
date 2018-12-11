@@ -1,5 +1,5 @@
 use std::io;
-
+//code uses functions and std:io to perform basic math operations.
 //uses std library
 //::indicates a method or function is derived from whatever type precedes it.
 fn main()
