@@ -7,7 +7,7 @@
 
 > _Describe the language_
 >
-> - History
+> -Rust is a systems programming language thatt focuses on safety. It is similar to C++, but the designers intended it to provide better memory safety while having good performance. It was designed by Graydon Hoare at Mozilla Research with help from Dave Herman, Brendan Eich, and many others. It won the first place prize for "most loved programming language" in the Stack Overflow Developer Survey in 2016, 2017, and 2018.
 > - Ownership feature helps manage memory.
 > - comes with cargo, which manages projects and imports.
 > - 
@@ -82,6 +82,12 @@ fn main ()
         println!("Iteration no {}", myar[x]); // prints the elements in the array
 
     }
+      let mut index = 0;
+    while index < 5 { //while loop
+       println!("the value is: {}", index);
+
+       index = index + 1;
+   }
 }
 ```
 *defining functions*
@@ -108,6 +114,39 @@ let mut num=4.0;
 }
 
 ```
+
+*ownership*
+```
+struct foo {
+    data: u32,
+}
+
+fn main() {
+    let st = foo { data: 5 };
+
+    // pass reference to function
+    print_ref(&st);
+
+    // You can continue to call the function
+    print_ref(&st);
+
+    //invoke print val using variable ST instead of reference
+    print_val(st);
+
+    print_val(st);
+    // get a compiler error, since st was "used up" by the first print_val; it was given to the printval method
+    // which closed it's memory after finishing
+}
+
+
+fn print_ref(st: &Something) {//uses reference
+    println!("foo: {}", st.value);
+}
+
+fn print_val(st: Something) {//uses variable/value
+    println!("foo: {}", st.value);
+}
+```
 ## About the tools
 
 > Rustup, the installer, automatically installs a package manager known as Cargo. Similar to Lein, Cargo can automatically create projects and can build them from filse located in the src folder. It does require you to have the Visual Basic Studio tools for C installed. 
@@ -133,9 +172,7 @@ edition = "2018"
 
 ## About the standard library
 
-> _Give some examples of the functions and data structures
-> offered by the standard library_.
->String, as well as IO are inside the std library.
+>String, as well as IO are inside the std library. Another useful thing in the std libarary is Vector, which allows you to have a collection of any type that can easily be added to. 
 
 ## About open source library
 
@@ -147,14 +184,13 @@ The open source library function for Rust is located on https://crates.io/. For 
 > _
 Rust is a language that has some support for functional programming.
 It allows the user to utilize macros for meta programming - writing code that writes more code.
-
-3.	Symbol resolution and its support for closure
-4.	Scoping rules supported by the language: lexical vs dynamic scoping
+SYMBOL RESOLUTION/CLOSURE
+Rust is a lexical scope language. It knows the types of variables during compilation, and will return errors if actions are taken with incompatible types.
 5.	Functional programming constructs either as part of the language or supported by the standard library of the runtime.
-6.    Rust is a statically typed system. That is to say - it must know the types of all variables it uses at the time of compilation. HOWEVER, it also supports type inference. This means that even if you don't declare the type, it will assign a type based off the assigned values.
-7.	Strengths and weaknesses of the language
-Rust's main focus is on being memory safe - it avoids memory leaks and such. It has an "ownership" feature which allows it to make memory safe guarantees without needing a garbage collector. 
 
+Rust is a statically typed system. That is to say - it must know the types of all variables it uses at the time of compilation. HOWEVER, it also supports type inference. This means that even if you don't declare the type, it will assign a type based off the assigned values.
+
+Rust's main focus is on being memory safe - it avoids memory leaks and such. It has an "ownership" feature which allows it to make memory safe guarantees without needing a garbage collector. Rust resolves symbols by an ownership system. Every value has an "owner", and if that owner drops out of the scope, the values are erased. For instance, if you pass a variable to println, after it's printed out, you will no longer be able to use that variable. It is difficult to learn, because the new concepts that make it strong make it difficult to grasp coming from other languages. 
 
 
 
