@@ -180,8 +180,9 @@ edition = "2018"
 The open source library function for Rust is located on https://crates.io/. An external library in Rust is called a Crate/ The package manager, cargo, manages imports. For the purpose of this assignment, I opted to use the memchr crate for an example, which is a library which can search data for a byte and return the first location of that byte. I also used the rand crate to generate a random number for the guessing game.
 # Analysis of the language
 
-> _
+
 Rust is a language that has some support for functional programming.
+
 It allows the user to utilize macros for meta programming - writing code that writes more code.
 
 Rust allows you to define variables, and uses an "ownership" technique to remove them. Upon being passed to a function, the variable's owner becomes that function. If that function leaves the scope, the variable is dropped. What that means is that you can effectively only use a variable once, ensuring that upon being used it will no longer take up space. This can be worked around, however, by utilizing references - if you give a function the reference of a variable, it will not use the variable up. 
