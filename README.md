@@ -176,9 +176,8 @@ edition = "2018"
 
 ## About open source library
 
-> _Describe at least one contribution by the open source
-community written in the language._
-The open source library function for Rust is located on https://crates.io/. For the purpose of this assignmen, I opted to use the 
+
+The open source library function for Rust is located on https://crates.io/. An external library in Rust is called a Crate/ The package manager, cargo, manages imports. For the purpose of this assignment, I opted to use the memchr crate for an example, which is a library which can search data for a byte and return the first location of that byte. I also used the rand crate to generate a random number for the guessing game.
 # Analysis of the language
 
 > _
