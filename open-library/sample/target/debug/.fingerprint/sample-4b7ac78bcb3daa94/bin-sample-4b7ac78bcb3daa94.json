@@ -1,0 +1,1 @@
+{"rustc":11604300878102939825,"features":"[]","target":17086808430758679401,"profile":13774314358039155868,"path":1036222786711178230,"deps":[["memchr v2.1.2","memchr",8309555225440134899]],"local":[{"MtimeBased":[[1544590289,860705600],".fingerprint\\sample-4b7ac78bcb3daa94\\dep-bin-sample-4b7ac78bcb3daa94"]}],"rustflags":[],"edition":"Edition2018"}
