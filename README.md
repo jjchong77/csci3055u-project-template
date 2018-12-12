@@ -184,9 +184,12 @@ The open source library function for Rust is located on https://crates.io/. For 
 > _
 Rust is a language that has some support for functional programming.
 It allows the user to utilize macros for meta programming - writing code that writes more code.
-SYMBOL RESOLUTION/CLOSURE
+
+Rust allows you to define variables, and uses an "ownership" technique to remove them. Upon being passed to a function, the variable's owner becomes that function. If that function leaves the scope, the variable is dropped. What that means is that you can effectively only use a variable once, ensuring that upon being used it will no longer take up space. This can be worked around, however, by utilizing references - if you give a function the reference of a variable, it will not use the variable up. 
+
 Rust is a lexical scope language. It knows the types of variables during compilation, and will return errors if actions are taken with incompatible types.
-5.	Functional programming constructs either as part of the language or supported by the standard library of the runtime.
+
+For functional programming, Rust supports iterators and closures (similar to functions, but able to take in values from where they're defined.)
 
 Rust is a statically typed system. That is to say - it must know the types of all variables it uses at the time of compilation. HOWEVER, it also supports type inference. This means that even if you don't declare the type, it will assign a type based off the assigned values.
 
